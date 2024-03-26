@@ -1,0 +1,43 @@
+Ejemplos de mi codigo CJ++
+-----------------------------------------------------------------------
+
+1. Hola mundo
+
+
+    Proceso
+        imprimir "Hola Mundo";
+    FinProceso
+
+-----------------------------------------------------------------------
+
+2. Factorial iterativo
+
+    Proceso FactorialIterativo
+        entero num = 3;  
+        entero resultado = 1;  
+    
+        mientras (num > 1) {
+            resultado = resultado * num;
+            num = num - 1;
+        }
+    
+        imprimir "El factorial es: " + resultado;
+    FinProceso
+-----------------------------------------------------------------------
+
+3. Factorial recursivo
+
+
+    entero factorialRecursivo(entero num) {
+        si (num <= 1) {
+            regresa 1;
+        } sino {
+            regresa num * factorialRecursivo(num - 1);
+        }
+    }
+    
+    Proceso
+        entero numero = 5;
+        entero resultado = factorialRecursivo(numero);
+        imprimir "El factorial es: " + resultado;
+    FinProceso
